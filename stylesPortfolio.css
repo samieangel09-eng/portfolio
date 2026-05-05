@@ -1,0 +1,93 @@
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#231f28,#d48aa0);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:25px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+}
+
+nav a{
+color:#ffd7e5;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:white;
+transform:translateY(-3px);
+}
+
+.portfolio-page{
+padding:60px 10%;
+text-align:center;
+}
+
+.portfolio-page h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#ffe7f0;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.cards a{
+text-decoration:none;
+color:white;
+padding:30px 20px;
+border-radius:25px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+transition:.3s;
+box-shadow:0 15px 25px rgba(0,0,0,0.2);
+}
+
+.cards a:hover{
+transform:translateY(-10px) scale(1.03);
+background:rgba(255,255,255,0.14);
+box-shadow:0 25px 35px rgba(0,0,0,0.3);
+}
+
+.cards span{
+font-size:2.3rem;
+display:block;
+margin-bottom:15px;
+}
+
+.cards h3{
+margin:10px 0 5px;
+font-size:1.2rem;
+}
+
+.cards p{
+margin:0;
+font-size:.95rem;
+color:#f7dbe7;
+}
+
+@media(max-width:768px){
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+.portfolio-page h1{
+font-size:2.2rem;
+}
+}

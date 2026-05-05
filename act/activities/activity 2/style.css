@@ -1,0 +1,18 @@
+.back-btn{
+display:inline-block;
+margin:20px;
+padding:12px 20px;
+background:linear-gradient(90deg,#f7b0c6,#caa4ff);
+color:#231f28;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+font-family:Poppins,sans-serif;
+box-shadow:0 8px 18px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.back-btn:hover{
+transform:translateY(-3px) scale(1.05);
+background:linear-gradient(90deg,#ffd1e0,#ddb8ff);
+}

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #231f28, #d48aa0);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+  background: rgba(255,255,255,0.05);
+}
+
+nav a {
+  color: #ffd7e5;
+  text-decoration: none;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 25px;
+  backdrop-filter: blur(12px);
+}
+
+.formal-pic {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.about-text{
+font-size:1.3rem;
+line-height:2;
+}
+
+.facts{
+font-size:1.2rem;
+line-height:1.9;
+margin-top:20px;
+}

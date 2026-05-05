@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #231f28, #d48aa0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+.back-btn{
+display:inline-block;
+margin:20px;
+padding:10px 18px;
+background:pink;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+}

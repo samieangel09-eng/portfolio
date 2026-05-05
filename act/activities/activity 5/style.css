@@ -1,0 +1,52 @@
+body {
+    background-color: lightpink;
+}
+
+.header {
+    border: 1px outset #000000;
+    width: 80%;
+    height:300px;
+    background-color:darkseagreen;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.navbar {
+    border: 20px outset #000000;
+    width: 80%;
+    height:50px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.main {
+    border: 20px outset #000000;
+    width: 80%;
+    height:300px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.footer {
+    border: 20px outset #000000;
+    width: 80%;
+    height:50px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+
