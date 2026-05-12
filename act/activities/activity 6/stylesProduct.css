@@ -1,0 +1,123 @@
+body {
+    background-color: #ffc1cc; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Arial Rounded MT Bold', sans-serif;
+}
+
+/* Main container */
+.products-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0 30px;
+}
+
+/* Main heading */
+.products-container h2 {
+    font-size: 32px;
+    color: #2C5F2D; 
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    margin: 10px 0 30px;
+}
+
+/* Section headings Best sellers */
+.section-heading {
+    font-size: 26px;
+    color: #2C5F2D; 
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    margin: 40px 0 15px;
+    padding-left: 5px;
+    border-bottom: 2px solid #E2D9F3; /* Pastel Purple - matches home borders */
+}
+
+/* 3-column grid per section */
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+/* Product cards */
+.product-card {
+    background-color: #f38fa9; 
+    border: 2px solid #E2D9F3;
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(44, 95, 45, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Images - 5:4 horizontal ratio */
+.product-card img {
+    width: 100%;
+    aspect-ratio: 5/4; /* Consistent 5:4 proportion */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 8px;
+    border: 2px solid #E2D9F3;
+    margin-bottom: 12px;
+}
+
+/* Product name */
+.product-card h4 {
+    color: #2C5F2D;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+/* Product description */
+.product-card p {
+    color: #323232;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+/* Price */
+.price {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    color: #8B0000;
+    margin: 0 0 15px;
+}
+
+/* Add to cart button */
+.add-btn {
+    background-color: #2C5F2D; /* Dark Green */
+    color: #ffc1cc; /* Cream */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 80%; /* Consistent button width */
+}
+
+.add-btn:hover {
+    background-color: #3E8E41;
+}
+
+/* Responsive design - Consistent with home */
+@media (max-width: 768px) {
+    .product-section {
+        grid-template-columns: 1fr;
+    }
+    .section-heading {
+        text-align: center;
+    }
+    .add-btn {
+        width: 100%;
+    }
+}
