@@ -1,60 +1,83 @@
 <!DOCTYPE html>
-<html>
- <head>
-    <title>Activity 4</title>
- </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity 4</title>
+</head>
 
 <body>
 
 <h2>User Information Form</h2>
 
-<form action="" method="post">
+<form id="userForm">
 
-    <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="firstname" required><br><br>
+<label>First Name:</label><br>
+<input type="text" required><br><br>
 
-    <label for="lname">Last Name:</label><br>
-    <input type="text" id="lname" name="lastname" required><br><br>
+<label>Last Name:</label><br>
+<input type="text" required><br><br>
 
-    <label for="age">Age:</label><br>
-    <input type="number" id="age" name="age"><br><br>
+<label>Age:</label><br>
+<input type="number"><br><br>
 
-    <label>Gender:</label><br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
+<label>Gender:</label><br>
 
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
+<input type="radio" name="gender">
+<label>Male</label>
 
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label><br><br>
+<input type="radio" name="gender">
+<label>Female</label>
 
-    <label>Hobbies:</label><br>
-    <input type="checkbox" id="hobby1" name="hobby[]" value="reading">
-    <label for="hobby1">Reading</label><br>
+<input type="radio" name="gender">
+<label>Other</label>
 
-    <input type="checkbox" id="hobby2" name="hobby[]" value="traveling">
-    <label for="hobby2">Traveling</label><br>
+<br><br>
 
-    <input type="checkbox" id="hobby3" name="hobby[]" value="cooking">
-    <label for="hobby3">Cooking</label><br>
+<label>Hobbies:</label><br>
 
-    <input type="checkbox" id="hobby4" name="hobby[]" value="sports">
-    <label for="hobby4">Sports</label><br><br>
+<input type="checkbox">
+<label>Reading</label><br>
 
-    <label for="year-level">Year Level:</label><br>
-    <select id="year-level" name="year_level">
-        <option value="">--Select Year--</option>
-        <option value="1st-year">1st Year</option>
-        <option value="2nd-year">2nd Year</option>
-        <option value="3rd-year">3rd Year</option>
-        <option value="4th-year">4th Year</option>
-    </select><br><br>
+<input type="checkbox">
+<label>Traveling</label><br>
 
-    <button type="submit">Submit</button>
-    <button type="reset">Clear</button>
+<input type="checkbox">
+<label>Cooking</label><br>
+
+<input type="checkbox">
+<label>Sports</label>
+
+<br><br>
+
+<label>Year Level:</label><br>
+
+<select>
+<option>--Select Year--</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Clear</button>
 
 </form>
+
+<script>
+
+document.getElementById("userForm").addEventListener("submit", function(event){
+
+event.preventDefault();
+
+alert("Thank you for your submission!");
+
+});
+
+</script>
 
 </body>
 </html>
